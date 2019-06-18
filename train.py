@@ -18,7 +18,7 @@ def print_metrics(metrics_df, idx, promt = ""):
     kld_str = "\n".join(["Training Context KLD : {0:.6f}".format(metrics_df.loc[idx, "train_context_kld"]),
                          "Training KG KLD : {0:.6f}".format(metrics_df.loc[idx, "train_KG_kld"]),
                          "Valiad Context KLD : {0:.6f}".format(metrics_df.loc[idx, "valid_context_kld"]),
-                         "Valid KG KLD : {0..6f}".format(metrics_df.loc[idx, "valid_KG_kld"])])
+                         "Valid KG KLD : {0:.6f}".format(metrics_df.loc[idx, "valid_KG_kld"])])
     emb_metrics_str = "\n".join(["Embedding Average: {0:.6f}".format(metrics_df.loc[idx, "emb_avg"]),
                                 "Embedding Extreme: {0:.6f}".format(metrics_df.loc[idx, "emb_ext"]),
                                 "Embedding Greedy : {0:.6f}".format(metrics_df.loc[idx, "emb_gre"])])
