@@ -1,0 +1,105 @@
+Bad Cases:
+
+I. REPETITION: 
+1 ----------------------------------------------------------------------------------------------------------------------
+Question : <TOPIC> metallica <EOS> <MESSAGE> what do you think of the band metallica ? personally i 'm not a fan . <EOS>
+Answer : <RESPONSE> i understand they are a heavy metal band out of la - i 'm not a fan either - that is just not my genre of music . <EOS>
+ Generated: i love them , they are an american heavy metal band from california .   they are from los angeles , california .   i love their music <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> metallica is an american heavy metal band from los angeles , california . <EOS>
+2 ---------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> we have a lake near us that does n't allow motorized boats so it 's perfect <EOS>
+Answer : <RESPONSE> do you think you will join your husband is fishing from a kayak ? it sounds like fun ! <EOS>
+ Generated: that 's awesome ! i also like kayak in a kayak , which is a kayak from a kayak . it is so beautiful . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> kayak fishing is fishing from a kayak . <EOS>
+
+II. cannot generate coherent sentence without checked sentence
+3 ---------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> wow ! herbs are so easy to grow and so fresh tasting <EOS>
+Answer : <RESPONSE> indeed they are , it just takes a good amount of practice and you can grow your own amazing garden full of fresh spices and herbs . <EOS>
+Generated: i know ! a lot of people use herbs in herbs and herbs like garlic and herbs . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+Checked: <CHECKED_SENT> <EOS>
+4 ---------------------------------------------------------------------------------------------------------------------
+ Question : <MESSAGE> what works have they completed ? <EOS>
+Answer : <RESPONSE> edgar allen poe produced “ the fall of the house of usher , ” “ the <UNK> of the red death , ” and “ <UNK> ” .   those would be a great start . <EOS>
+ Generated: they have been completed in the us in the us . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> <EOS>
+
+III. Inconsistency between different clauses.
+5 ---------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> she sounds like a spoiled rich <UNK> <EOS>
+Answer : <RESPONSE> i think it 's how she was raised . her mom had no family fortune , only her father , and he pushed his girls to marry well so they would be able to support the family upon his
+Generated: i 'm not sure , but i 'm sure you 're definitely a lot of fun ! i 'm sure you 'll find a lot of money because she 's no fortune her first one . <EOS> <EOS> <EOS>
+Checked: <CHECKED_SENT> his wife has no fortune , so it is <UNK> that at least one of the girls marry well in order to support the others on his death . <EOS>
+6 ---------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> ok good team work <EOS>
+Answer : <RESPONSE> yes , with teams of 6 and heroes , they have offense , defense , thank and support . <EOS>
+ Generated: yeah , i 'm in the team that team players , and they play in a team with the roster of over 20 characters . so , i 'm in the team that i 'm from <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> " overwatch " assigns players into two teams of six , with each player selecting from a roster of over 20 characters , known in - game as " heroes " , each with a unique style of play
+
+IV. Too many <UNK> words make the generated sentence unreadable
+7 ---------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> i noticed that too , not to mention that they are starting to release some of their movies in select theaters i believe . blockbuster must still have regrets . <EOS>
+Answer : <RESPONSE> yeah , with netflix , <UNK> kiosks etc . blockbuster did n't stand a chance . <EOS>
+ Generated: i think it 's still forever now ! now , i hope <UNK> will win the <UNK> of netflix and netflix on eventual services to the demise of the demise . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> competition from the netflix mail - order service , <UNK> automated kiosks , and video on demand services were major factors in blockbuster 's eventual demise . <EOS>
+
+V. Inconsistency with commonsence knowledge
+8 ---------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> yeah , i agree too , it is junk food . <EOS>
+Answer : <RESPONSE> yes junk food can also refer to high protein food like meat with saturated fat . <EOS>
+ Generated: that is true . junk food can also be made from saturated protein . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> junk food can also refer to high protein food like meat prepared with saturated fat . <EOS>
+
+
+Good Cases:
+1 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> where do you stand on elvis though . popular , hated by parents . <EOS>
+Answer : <RESPONSE> he was a cultural icon of the 20th century ! he is simply the king ! <EOS>
+ Generated: i like that elvis is one of the major icons in the 20th century . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> regarded as one of the most significant cultural icons of the 20th century , he is often referred to as the " king of rock and roll " or simply " the king " . <EOS>
+2 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> wow , i had no idea .   i knew that the ranges were in the same part of the country , but i have confused the mountain ranges for a long time .   what other nature areas
+Answer : <RESPONSE> i love to explore all mountainous regions , but blue ridge is my favorite because they are noted for having a bluish color when seen from a distance , which is pretty cool . <EOS>
+ Generated: i think the blue ridge mountains is a bluish color when seen from a distance . i would love to see one of the most beautiful colors . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> the blue ridge mountains are noted for having a bluish color when seen from a distance . <EOS>
+3 ----------------------------------------------------------------------------------------------------------------------
+Question : <TOPIC> metallica <EOS> <MESSAGE> hello have you heard about the band <UNK> <EOS>
+Answer : <RESPONSE> yes i have , they are a heavy metal band from los angeles , california formed by lars ulrich , and james hetfield . <EOS>
+ Generated: i have heard of the band , they were formed in 1981 by lars ulrich and james hetfield . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> the band was formed in 1981 by drummer lars ulrich and vocalist / guitarist james hetfield . <EOS>
+4 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> thanks for the advice ! i ca n't wait to take my first hike ! <EOS>
+Answer : <RESPONSE> also you probably need some other hiking equipment like bug spray , sunscreen and maybe some <UNK> <EOS>
+ Generated: you should try ! hiking is the equipment taken on outdoor walking trips , so it 's really hard to go ! <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> hiking equipment is the equipment taken on outdoor walking trips . <EOS>
+
+5 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> that is really interesting <EOS>
+Answer : <RESPONSE> epilepsy seizures can lead to long vigorous periods of shaking to being nearly undetectable . <EOS>
+ Generated: they seizures can episodes from long periods of vigorous shaking . they are very similar to vigorous shaking . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> epileptic seizures are episodes that can vary from brief and nearly undetectable to long periods of vigorous shaking . <EOS>
+6 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> not really , but i would love to listen to their album . <EOS>
+Answer : <RESPONSE> their name is interesting . it is taken from the new found glory song , the story so far . i did not know that ! <EOS>
+ Generated: they have been around since the first album glory the story so far . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> their name is taken from the new found glory song " the story so far " . <EOS>
+7 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> that sounds so interesting , i wonder where i can get some . <EOS>
+Answer : <RESPONSE> i"m not sure if you can buy in store . but the flavors used could be <UNK> , <UNK> or even apple or cherry <EOS>
+ Generated: it is a very good choice , especially in some of the cherry flavor . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> in north america , <UNK> , <UNK> , oak , pecan , <UNK> , maple , and fruit - tree woods , such as apple , cherry , and plum , are commonly used for smoking . <EOS>
+8 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> that 's interesting i think i 've also heard of rayleigh scattering or some sort of scattering in graphics animation . i also heard that orange is the brightest color the human eye can see . <EOS>
+Answer : <RESPONSE> well , rayleigh scattering is the scattering of electrically polarized particles ... or you can just think of it as blue light scattering more effectively and thus being more dominant <EOS>
+ Generated: yes , it is . that 's why they call them rayleigh scattering . they actually moved from the electric of the particles . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> rayleigh scattering results from the electric <UNK> of the particles . <EOS>
+9 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> maybe like you sad , just enjoy and watch from now on , but i m lucky that i have a few friends that i can play with <EOS>
+Answer : <RESPONSE> i 'm surprised at how far back tennis - like games go though . it seems most historians believe that tennis was derived from a game played in the monastic <UNK> in the 12th century . except there were
+ Generated: i agree . i love watching the modern world tradition that tennis originated in the monastic <UNK> in france .   i think it 's pretty interesting that there are many different types . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> most historians believe that tennis originated in the monastic <UNK> in northern france in the 12th century , but the ball was then struck with the palm of the hand ; hence , the name <UNK> de <UNK> (
+10 ----------------------------------------------------------------------------------------------------------------------
+Question : <MESSAGE> oh ? what is the general theory of relationships ? <EOS>
+Answer : <RESPONSE> i know a little bit about infants . all infants become attached if provided any caregiver <EOS>
+ Generated: i 'm not sure , but infants are attached to provided any caregiver . there are differences in the quality of the relationships . <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS> <EOS>
+ Checked: <CHECKED_SENT> essentially all infants become attached if provided any caregiver , but there are individual differences in the quality of the relationships . <EOS>
